@@ -2,25 +2,86 @@
 <html>
 <head>
 	<meta charset = 'utf-8'>
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+	<!-- font -->
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Bowlby+One+SC" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
+
+
+
+
+
+
+	<link rel="stylesheet" type = "text/css" href="./styles.css">	
+
 	<link rel="icon" type="image/png" href="Img/pass.png" />
 	<title>CV Builder</title>
 </head>
 <body>
-	<div id = "Header">
-		<i class="far fa-file-alt"></i>
-		<button id = "about">About</button>
-		<button id = "logIn">Log In</button>
-		<button id = "signUp">Sign Up</button>
+	<div class = "header">
+		<!-- <i class="logo far fa-file-alt"></i> -->
+		<!-- <div class = "logo"><img src="./Img/pass.png" height="60" width = "60"></div> -->
+		<div class = "pageTitle">Make your own CV</div>
+		<div class = "about">About</div>
+		<div class = "logIn">Sign In/Sign Up</div>
+		<!-- <div class = "signUp">Sign Up</div> -->
 	</div>
-	<div id = "nameAndPhoto">
-		<img src="./Img/avatar.png">
-		<h1>Phạm Quốc Nguyên</h1>
-		<h2>Front-End Developer</h2>
-	</div>
-	<div id = "carObj">
+	<div class = "cv">
+		<div class = "intro">
+			<div class = "avatar circle"></div>
+			<div class = "info">
+				<div class = "big-title">Phạm Quốc Nguyên</div>
+				<div class = "sub">Front-End Developer</div>
+			</div>
+		</div>
+		<div class = "main carObj">
+			<div class = "big-title">Career Objective</div>
+			<div class = "sub">Having programming background as an embedded engineering, web-development becomes my choice for career due to my programming passion and its ease for self-studying. Becomming a professional web-developer and being able to apply AI for smater web services are my goals in near future.
+			</div>
+		</div>
+		<div class = "main experience">
+			<div class = "big-title">Experience</div>
+			<div class = "detail">
+				<div class = "time sub">Feb, 2019</div>
+				<div>
+					<div class = "small-title">Create my first web site - CV templates site</div>
+					<div class = "sub">Database included for saving users info and data</div>
+				</div>
+
+			</div>
+
+			<div class = "detail">
+				<div class = "time sub">Nov, 2018 - Feb, 2019</div>
+				<div>
+					<div class = "small-title">Web-development course from coders.tokyo</div>
+					<div class = "sub">Javascript, HTML, CSS, UI design</div>
+				</div>
+			</div>
+
+			<div class = "detail">
+				<div class = "time sub">Nov, 2018</div>
+				<div>
+					<div class = "small-title">Embedded project at University</div>
+					<div class = "sub">Programming micro-controller (STM32 using C) driving servo motor</div>
+					<div class = "sub">Python GUI (Tkinter)</div>
+					<div class = "sub">Using threading for full-duplex serial communication</div>
+				</div>
+			</div>
+
+			<div class = "detail">
+				<div class = "time sub">Sep, 2018 - Oct, 2018</div>
+				<div>
+					<div class = "small-title">Image processing projects at university - Python apps</div>
+					<div class = "sub">License plate reading</div>
+					<div class = "sub">Car counting</div>
+				</div>
+			</div>
+		</div>
 		
 	</div>
+	
+	
+
 
 
 </body>
