@@ -1,21 +1,44 @@
+/*global*/
+
 body{
 	font-family: 'Open Sans',sans-serif; 
 	padding: 10px;
+
 	color: #003c5eff;
 }
 
+.cv{
+	display: flex;
+	border: 1px solid black;
+	margin: 20px 100px 0px 100px;
+	box-shadow: 3px 3px;
+}
+
+.left-column{
+	/*border: 1px solid black;*/
+	flex-basis: 800px;
+	flex-grow: 2;
+}
+.right-column{
+	/*border: 1px solid black;*/
+	flex-basis: 400px;
+	flex-grow: 1;
+	padding-top: 50px;
+}
 
 .main{
-	margin: 25px;
+	margin: 20px 25px 0px 25px;
 	display: flex;
 	flex-direction: column;
+	border-bottom: 1px solid #003c5e22;
+	padding: 15px 0px 15px 0px;
 }
 
 .big-title {
 	color: #003c5eff;
 	font-weight:bold;
-	font-size: 18px;
-	padding: 15px 0px 15px 0px;
+	font-size: 20px;
+	padding: 0px 0px 15px 0px;
 }
 
 .small-title{
@@ -32,22 +55,32 @@ body{
 	color: #777777ff;
 	font-size: 15px;
 	padding-bottom: 5px;
-	flex-grow: 1;
+	padding-left: 0px;
 }
 
 
 .time{
-	padding: 10px 10px 10px 0px;
+	padding: 10px 0px 10px 0px;
 	flex-basis: 100px;
 	flex-grow: 0;
+	text-align: right;
+	flex-shrink: 0;
+	color: #777777ff;
 }
+
+.line{
+	border-left:1px solid black;
+	margin: 0px 30px 0px 30px;
+}
+
+/*end global*/
 
 .header {
 	display: flex;
 	flex-direction: row;
-/*	background-color: #033c62;
-*/	padding: 0px 10px 0px;
+	padding: 0px 10px 0px;
 	align-items: center;
+	border-bottom: 1px solid #003c5e55;
 }
 
 
@@ -71,13 +104,16 @@ body{
 
 .logIn{
 	font-size: 15px;
+	flex-shrink: 0;
 }
 
 .circle{
 	background-color: #ff0;
-	width: 100px;
-	height: 100px;
+	width: 150px;
+	height: 150px;
 	border-radius: 50%; 
+	object-fit: cover;
+	object-position:-1% 30%;
 }
 
 .avatar{
@@ -88,22 +124,45 @@ body{
 .intro{
 	display: flex;
 	flex-direction: row;
-	border: 1px solid black;
+	/*border: 1px solid black;*/
 	margin: 10px 10px 10px 10px;
 }
 
 .info .big-title{
-	padding-top: 20px;
-	font-size: 25px;
+	padding: 20px 0px 0px 0px;
+	font-size: 40px;
 	font-weight: normal;
 }
 
 .info .sub{
 	font-style: italic;
+	font-size: 20px;
 }
 
-.carObj .sub{
-	color:  #003c5eff;
+.software .sub {
+	padding: 10px 0px 10px 0px;
 }
 
+.title{
+	display: flex;
+}
+.title .big-title{
+	padding-top: 10px;
+}
+.title .circle{
+	width: 30px;
+	height: 30px;
+	margin: 0px 10px 0px 110px;
+	background-color: #003c5eff;
+	object-fit: contain;
+	object-position: 50% 0%;
+	padding: 5px;
+}
 
+.right-column .circle{
+	margin-left: 0px;
+}
+
+.icon{
+
+}
