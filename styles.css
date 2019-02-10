@@ -176,6 +176,7 @@ body{
 .info .sub{
 	font-style: italic;
 	font-size: 20px;
+	display: unset;
 }
 
 .software .sub {
@@ -202,6 +203,12 @@ body{
 	margin-left: 0px;
 }
 
-.icon{
-
+/*.time, .line, .sub, .small-title{
+	display: none;
 }
+
+
+.main:target .time,.main:target  .line,.main:target  .sub,.main:target  .small-title{
+	display: unset;
+}
+*/
