@@ -1,17 +1,47 @@
 /*global*/
+body,html {
+  /*height: 100%;*/	
+  /*width: 100%;*/
+}
+
+html {
+
+  /*background: url(./Img/pattern.jpg.png) repeat;*/
+/*  filter: blur(8px);
+  	-webkit-filter: blur(8px);
+*/  /*background-size*/
+  /*background-size: cover;*/
+  /*height:100%;*/
+  /*width: 100%;*/
+  /*overflow: hidden;*/
+   /*background-position: center;*/
+  /*background-repeat: repeat;*/
+  /*background-size: cover;*/
+}
 
 body{
+		/*background: url(./Img/backgroundImage.jpg) no-repeat left center;*/
 	font-family: 'Open Sans',sans-serif; 
-	padding: 10px;
-
+	margin:0px 0px 0px 00px;
 	color: #003c5eff;
+
+
+	background: url(./Img/pattern.jpg) repeat center center fixed;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+    -o-background-size: cover;
+    background-size: auto;
+    /*background-position: fixed;*/
 }
 
 .cv{
 	display: flex;
-	border: 1px solid black;
-	margin: 20px 100px 0px 100px;
-	box-shadow: 3px 3px;
+	/*border: 1px solid black;*/
+	margin: 50px 120px 100px 120px;
+	box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+	background-color: white;
+	border: 1px solid rgba(0, 0, 0, 0.1);
+	border-radius: 15px;
 }
 
 .left-column{
@@ -74,13 +104,20 @@ body{
 }
 
 /*end global*/
-
+.placeholder{
+	height: 50px;
+}
 .header {
 	display: flex;
 	flex-direction: row;
-	padding: 0px 10px 0px;
+	padding: 10px 00px 10px 00px;
 	align-items: center;
-	border-bottom: 1px solid #003c5e55;
+	/*border-bottom: 1px solid #003c5e55;*/
+	background-color: #fbdb64;
+	/*border-radius: 10px;*/
+	width : 100%;
+	/*background-color: white;*/
+	position: fixed;
 }
 
 
@@ -91,8 +128,9 @@ body{
 	width: 80%;
 	text-align: left;
 	font-family: 'Indie Flower', cursive;
-	padding-left: 10px;
+	padding-left: 30px;
 	font-weight: bold;
+	color:  #005c5eff;
 
 }
 
@@ -105,6 +143,7 @@ body{
 .logIn{
 	font-size: 15px;
 	flex-shrink: 0;
+	padding-right: 30px;
 }
 
 .circle{
