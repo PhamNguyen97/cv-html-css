@@ -1,0 +1,6 @@
+{
+  "projects": {
+    "default": "fir-database-4ccfe",
+    "staging": "make-your-own-cv"
+  }
+}
